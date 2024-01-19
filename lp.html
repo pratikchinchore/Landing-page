@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Employees are choosing how they work</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#lead-form").validate({
+                errorPlacement: function (error, element) {
+                    if (element.attr("type") == "checkbox") {
+                        error.insertAfter(element.closest(".check-group"));
+                    } else {
+                        error.insertAfter(element);
+                    }
+                }
+            });
+        });</script>
+</head>
+
+<body style="background-color: #dee2e6;">
+    <section class="navbar">
+        <div class="container at-container2">
+            <img src="https://cmofirst.com/wp-content/uploads/2022/08/Final-CMO-CIO-Logos_CMO-Logo.png" alt=" "
+                class="company_logo at-item2" style="float:left;width:10%;">
+        </div>
+    </section>
+    <div class="container-fluid">
+        <header>
+            <h1 style="font-size:60px;font-weight:bold;"> </h1>
+        </header>
+    </div>
+    <div class="container at-container" style="   background-color: #2673ba; padding-top:30px;padding-bottom:20px;">
+        <!-- <div class="container" style="position: relative; ">
+        <svg viewBox="0 0 500 100">
+            <path d="M 0 50 C 150 150 300 0 500 80 L 500 0 L 0 0" fill="#2673ba"></path>
+            <path d="M 0 50 C 150 150 330 -30 500 50 L 500 0 L 0 0" fill="#003a6f" opacity="0.6"></path>
+            <path d="M 0 50 C 215 150 250 0 500 100 L 500 0 L 0 0" fill="#003a6f" opacity="0.3"></path>
+        </svg> -->
+        <h1 class='at-item font_size' style="color:white;font-weight:bold;text-align:center; margin-left: 30px;">
+            Employees are
+            choosing how they work
+        </h1>
+    </div>
+    <!-- Form and abstract section starts -->
+    <section class="second_section">
+        <div class="container" style=" background-size: cover; background-color: #fff; ">
+            <div class="col-md-12">
+                <div class="row"
+                    style="padding-top: 20px; padding-bottom: 20px; margin-right: -30px; margin-left: -30px;">
+                    <div class="col-md-7">
+                        <br>
+                        <h4 style="font-size:18px;font-weight:normal;">
+                            To remain connected, productive and secure in a world where many forms of work can now be
+                            done remotely, employees need confidence that the digital environment won’t hinder their
+                            ability to deliver their best work.<br><br>
+                            Global research from Statista shows that 80% of employees working at least partially
+                            remotely would recommend it to a friend. But, as the study notes, “attitudes on telework
+                            are positive if employees are given the appropriate tools and technology to work
+                            remotely. These include digital collaboration and productivity management tools, as well
+                            as necessary hardware.”<br><br>
+                            This whitepaper looks at the key challenges and opportunities emerging from the changing
+                            workplace, defining best IT leadership practices that will ensure employees can work,
+                            collaborate, and innovate securely and productively from anywhere and, most importantly,
+                            accelerate the business towards its goals.<br><br>
+                        </h4>
+                        <center class='at-container1'><img class='at-item1'
+                                src="https://resource.itbusinesstoday.com/whitepapers/37621-Dell-Technologies-EMEA-Future-1.png"
+                                alt="Thumbnail" style="width:320px; margin-top:20px;"></center>
+                    </div>
+                    <div class="col-md-5">
+                        <h2 style="font-size:1.2em;"> FILL OUT THIS SHORT FORM TO DOWNLOAD TODAY!</h2>
+                        <form id="lead-form" action="LP-FY23-CMOfirst-sample-1-sendemail.php" method="post"
+                            name="registration"
+                            style="border: solid 10px #ABDCFF; background-color: #ABDCFF; text-align: center;">
+                            <input type="hidden" name="camp_id" id="camp_id" value="LP-FY23-CMOfirst-sample-1" />
+                            <input type="text" name="data[1]" id="firstname" placeholder="First Name" required
+                                style="margin-top: 15px;">
+                            <br>
+                            <input type="text" name="data[2]" id="lastname" placeholder="Last Name" required>
+                            <br>
+                            <input type="text" name="data[3]" id="email" placeholder="Work Email" required>
+                            <br>
+                            <input type="text" name="data[4]" id="Title" placeholder="Company name" required>
+                            <br>
+                            <input type="text" name="data[5]" id="Company_Name" placeholder="Company size" required>
+                            <br>
+                            <select id="job_role" name="data[6]" required placeholder="Job Role">
+                                <option value=""> Job Role</option>
+                                <option value="Owner">Owner</option>
+                                <option value="Chief Officer">Chief Officer</option>
+                                <option value="Vice President">Vice President</option>
+                                <option value="Director" class="">Director</option>
+                                <option value="Manager" class="">Manager</option>
+                                <option value="Individual Contributor/Staff" class="">Individual Contributor/Staff
+                                </option>
+                                <option value="Student" class="">Student</option>
+                            </select>
+                            <br>
+                            <select id="job_department" name="data[7]" required placeholder="Job Role">
+                                <option value="">job department </option>
+                                <option value="Chief Officer">Chief Officer</option>
+                                <option value="Developer/Engineering">Developer/Engineering</option>
+                                <option value="Finance">Finance</option>
+                                <option value="Operations">Operations</option>
+                                <option value="Marketing&#8203;/Sales">Marketing&#8203;/Sales</option>
+                                <option value="Human Resources">Human Resources</option>
+                                <option value="Procurement">Procurement</option>
+                            </select>
+                            <br>
+                            <input type="text" name="data[8]" id="phone" placeholder="Phone" required>
+                            <br>
+                            <select id="Country" name="data[9]" required placeholder="country">
+                                <option value="">Country</option>
+                                <option value="Afghanistan">Afghanistan</option>
+                                <option value="Åland Islands">Åland Islands</option>
+                                <option value="Albania">Albania</option>
+                                <option value="Algeria">Algeria</option>
+                                <option value="American Samoa">American Samoa</option>
+                                <option value="Andorra">Andorra</option>
+                                <option value="Vanuatu">Vanuatu</option>
+                            </select>
+                            <br>
+                            <div
+                                style="font-size:14px;width:90%;  display: flex; justify-content: flex-start; align-items: flex-start;margin:0;gap:8px">
+                                <input type="checkbox" style="margin:15px 0 0 35px;">
+                                <h6 style="text-align: left; margin-top:10px;">I would like to receive information from
+                                    suppliers who
+                                    sponsor this content and are
+                                    willing share the above information with Sponsor.</h6>
+                            </div>
+                            <br>
+                            <input type="submit" value="Download Now"
+                                style="color:white;background-color:#000000e0;font-weight:bold;font-size:15px;width:38%;height:40px; margin-bottom: 15px;">
+                        </form>
+                    </div>
+                </div>
+    </section>
+    <!-- Form and abstract section ends -->
+
+    <!-- Webinar Speakers section starts -->
+    <section class="third_section">
+        <div class="container" style=" background-size: cover; ">
+            <div class="col-md-12">
+                <div class="row resourse"
+                    style="padding:30px 20px 60px 20px; margin-right: -30px; margin-left: -30px; background-color: #ABDCFF;">
+                    <div class="col-md-12">
+                        <br>
+                        <h3 style="text-align: center;">Webinar Speakers</h3><br>
+                    </div>
+                    <div class="col md 4 divover">
+                        <center><img
+                                src="https://img.freepik.com/free-photo/cheerful-face-successful-senior-adult-businessman-isolated-white_186202-1922.jpg?size=626&ext=jpg&ga=GA1.1.386372595.1697760000&semt=ais"
+                                alt="Thumbnail" style="width:154px; margin-top:20px;"></center>
+                        <div class="overlay">
+                            <h4>Raj Ingale </h4>
+                            <h6 style="margin-top: 5px;">Chief Execative Officer</h6>
+                        </div>
+                    </div>
+
+                    <div class="col md 4 divover">
+                        <center><img
+                                src="https://as2.ftcdn.net/v2/jpg/05/76/60/99/1000_F_576609981_Mt7tEf8YbGfngswSx6fDGXEPm3UCnEfm.jpg"
+                                alt="Thumbnail" style="width:154px; margin-top:20px;"></center>
+                        <div class="overlay">
+                            <h4>Raj Ingale </h4>
+                            <h6 style="margin-top: 5px;">Chief Execative Officer</h6>
+                        </div>
+                    </div>
+
+                    <div class="col md 4 divover">
+                        <center><img
+                                src="https://png.pngtree.com/png-vector/20230904/ourlarge/pngtree-stand-businessman-necktie-ceo-png-image_9209929.png"
+                                alt="Thumbnail" style="width:154px; margin-top:20px;"></center>
+                        <div class="overlay">
+                            <h4>Raj Ingale </h4>
+                            <h6 style="margin-top: 5px;">Chief Execative Officer</h6>
+                        </div>
+                    </div>
+                </div>
+    </section>
+    <!-- Webinar Speakers section ends -->
+    <!-- Previously webinars starts -->
+    <section class="third_section">
+        <div class="container" style=" background-size: cover; background-color: #fff;">
+            <div class="col-md-12">
+                <div class="row" style="padding: 20px 20px 20px 20px;">
+                    <div class="col-md-12">
+                        <br>
+                        <h3 style="text-align: center;">Recent webinars</h3><br>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-4 col-md-6 d-flex align-items-stretch">
+                            <div class="card">
+                                <img src="https://resource.itsourcebox.com/whitepaper/Phantom-LP-The-Institutes-R-&-I-Conduent-Webinar-74761.png"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <a href="#" class="btn btn-primary">Watch Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+                            <div class="card">
+                                <img src="https://eu.itbusinessplus.com/whitepaper/Alpha-LP-VPO-3120994.1-Coupa-EMEA-8.PNG"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <a href="#" class="btn btn-primary">Watch Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0">
+                            <div class="card">
+                                <img src="https://resource.itsourcebox.com/whitepaper/LP-The-Institutes-R-&-I-Gryphon-74696.png"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <a href="#" class="btn btn-primary">Watch Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="astrodivider">
+                    <div class="astrodividermask"></div><span><i>&#9733;</i></span>
+                </div>
+    </section>
+    <!-- Previously webinars ends -->
+
+    <!-- Why US section starts -->
+    <section class="third_section">
+        <div class="container" style=" background-size: cover; background-color: #fff;">
+            <div class="col-md-12">
+                <div class="row" style="padding: 20px 20px 20px 20px;">
+                    <div class="col-md-12">
+                        <br>
+                        <h3 style="text-align: center;">Other Resources</h3><br>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-4 col-md-6 d-flex align-items-stretch">
+                            <div class="card">
+                                <img src="https://resource.itbusinessplus.com/whitepapers/Arc-86900-INT-BANT-Dell-APAC-MB-HVE-2.png"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">MAPPING TENABLE OT SECURITY TO MITRE ATT&CK FOR ICS FRAMEWORK
+                                    </h5>
+                                    <p class="card-text">MITRE ATT&CK for ICS is a framework for understanding the
+                                        tactics and techniques used by threat actors when attacking an industrial
+                                        control systems (ICS) network.</p>
+                                    <a href="#" class="btn btn-primary">View Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+                            <div class="card">
+                                <img src="https://resource.itbusinessplus.com/whitepapers/Arc-86900-INT-BANT-Dell-APAC-MB-HVE-2.png"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">MAPPING TENABLE OT SECURITY TO MITRE ATT&CK FOR ICS FRAMEWORK
+                                    </h5>
+                                    <p class="card-text">MITRE ATT&CK for ICS is a framework for understanding the
+                                        tactics and techniques used by threat actors when attacking an industrial
+                                        control systems (ICS) network.</p>
+                                    <a href="#" class="btn btn-primary">View Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0">
+                            <div class="card">
+                                <img src="https://resource.itbusinessplus.com/whitepapers/Arc-86900-INT-BANT-Dell-APAC-MB-HVE-2.png"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">MAPPING TENABLE OT SECURITY TO MITRE ATT&CK FOR ICS FRAMEWORK
+                                    </h5>
+                                    <p class="card-text">MITRE ATT&CK for ICS is a framework for understanding the
+                                        tactics and techniques used by threat actors when attacking an industrial
+                                        control systems (ICS) network.</p>
+                                    <a href="#" class="btn btn-primary">View Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="astrodivider">
+                    <div class="astrodividermask"></div><span><i>&#9733;</i></span>
+                </div>
+    </section>
+
+    <!-- Why US section Ends -->
+    <!-- Sponserd Logo & Key Features starts -->
+    <section class="fourth_section">
+        <div class="container" style=" background-size: cover; background-color: #fff;">
+            <div class="col-md-12">
+                <div class="row" style="padding: 40px 20px 20px 20px;">
+                    <div class="col-md-6">
+                        <h3 style="text-align: center;">Sponserd Logo</h3><br>
+                        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="https://resource.itbusinesstoday.com/whitepapers/elastic-logo-pr.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://engage.biz-tech-insights.com/MSFT/preferred%20logo.PNG"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://resource.itbusinessplus.com/whitepapers/schneider-Logo.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"
+                                style="background-color: black;"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"
+                                style="background-color: black;"></span>
+                        </button>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 style="text-align: center;">Additional Information</h3><br>
+                        <div class="member align-items-start">
+                            <div class="member-info">
+                                <ul>
+                                    <li>Improve data management</li>
+                                    <li>Automate processes</li>
+                                    <li>Gain visibility across multiple departments</li>
+                                    <li>Migrating to a single, integrated platform</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+    <!-- Sponserd Logo & Key Features Ends -->
+
+    <!-- Footer Section starts -->
+    <section class="fifth_section">
+        <div class="container" style=" background-size: cover; ">
+            <div class="col-md-12">
+                <div class="row"
+                    style="background-color:#2673ba;color:#fff;font-size: 14px;font-weight: normal; margin-left: -30px; margin-right: -30px;">
+                    <div class="col-sm-12">
+                        <div align="center">
+                            <br>
+                            <a href="https://resource.itbusinesstoday.com/whitepapers/unsubscribed.html" target="_blank"
+                                style="color: #fff; font-weight: bold; text-decoration: none;">
+                                Unsubscribe</a>&nbsp;&nbsp;|&nbsp;&nbsp; <a
+                                href="https://itbusinesstoday.com/eu-data-protection/"
+                                style="color: #fff; font-weight: bold; text-decoration: none;" target="_blank">
+                                Privacy Policy</a>
+                            <br>Copyright &#169; 2023 XDBS Corporation<br>Hawthorne, CA 90250 USA<br>3501, Jack Northorp
+                            Ave, Ste C3873<br>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer style="z-index: -1;">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            width="100%" height="100%" viewBox="0 0 1600 900">
+            <defs>
+                <linearGradient id="bg" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color: rgba(53, 127, 242, 0.6)"></stop>
+                    <stop offset="100%" style="stop-color: rgba(38, 89, 190, 0.06)"></stop>
+                </linearGradient>
+                <path id="wave" fill="url(#bg)"
+                    d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+            s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z" />
+            </defs>
+            <g>
+                <use xlink:href="#wave" opacity=".3">
+                    <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="8s"
+                        calcMode="spline" values="270 230; -334 180; 270 230" keyTimes="0; .5; 1"
+                        keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0" repeatCount="indefinite" />
+                </use>
+                <use xlink:href="#wave" opacity=".6">
+                    <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="6s"
+                        calcMode="spline" values="-270 230;243 220;-270 230" keyTimes="0; .6; 1"
+                        keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0" repeatCount="indefinite" />
+                </use>
+                <use xlink:href="#wave" opacty=".9">
+                    <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="4s"
+                        calcMode="spline" values="0 230;-140 200;0 230" keyTimes="0; .4; 1"
+                        keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0" repeatCount="indefinite" />
+                </use>
+            </g>
+        </svg>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
