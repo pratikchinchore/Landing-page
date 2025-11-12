@@ -1,3 +1,7 @@
+https://resource.ciofirst.com/whitepaper/GEP-MQL/GEP-Live-Event-MQLs-p-1-landing.html
+https://resource.nexttechtoday.com/whitepapers/LP-CIO-Insight-Summit-landing.html
+
+
 Tod's
 1. Queue
 2.types all
@@ -1016,6 +1020,7 @@ Sort a list of strings by length.
             .map(empName -> empName.length())               // Convert name to its length
             .sorted()                                       // Sort the lengths
             .collect(Collectors.toList());                  // Collect into a list
+
 
 
 
