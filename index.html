@@ -1,627 +1,271 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>The Heart Behind Great Out-Of-School Time — Soft Professional (Enhanced)</title>
 
-        body {
-            font-family: 'Noto Sans', sans-serif;
-            background-color: #e8ecee;
-            margin-left: 0;
-            margin-top: 20px;
-            margin-right: 0;
-            margin-bottom: 40px;
-        }
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-        button:focus {
-            box-shadow: 0 0 0 3px #f2bf11;
-        }
-
-        .calltoaction {
-            background-color: #245b8e;
-            text-align: center;
-            outline: 0;
-        }
-
-        .calltoaction:hover {
-            background-color: #245b8e;
-            color: #fff;
-        }
-
-        li {
-            padding-bottom: 10px;
-        }
-
-        ul {
-            line-height: 130%;
-            font-size: 14px;
-        }
-
-        .border-style {
-
-            border-radius: 12px;
-        }
-
-        /*responsive*/
-
-        @media (max-width: 768px) {
-            body {
-                padding-left: 15px;
-                padding-right: 15px;
-            }
-
-            .content-table thead {
-                display: none;
-            }
-
-            .content-table,
-            .content-table tbody,
-            .content-table tr,
-            .content-table td {
-                display: block;
-                width: 99.8%;
-            }
-
-            .content-table tr {
-                margin-bottom: 0px;
-            }
-
-            .content-table td {
-                text-align: left;
-                padding-left: 0%;
-                position: relative;
-            }
-
-            .content-table td.footer {
-                text-align: center;
-            }
-
-            .brandlogo img {
-                width: 50%;
-            }
-
-            .img {
-                height: auto;
-                width: 100% !important;
-            }
-
-            .img img {
-                width: 100%;
-            }
-
-            .heading {
-                position: relative;
-                width: 100%;
-                background-color: #4A82C3 !important;
-            }
-
-            .CTA {
-                text-align: center !important;
-                width: 100%;
-            }
-
-            .content-table td::before {
-                content: attr(data-label);
-                position: absolute;
-                left: 0;
-                width: 50%;
-                text-align: center;
-            }
-
-        }
-    </style>
-
+  <!-- GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+  <link href="./style.css" rel="stylesheet">
+  </link>
 </head>
 
-<body bgcolor="#B3B3B3">
-    <table class="content-table border-style" width="650" align="center"
-        style="background-color: #FFFFFF; border-collapse:separate;">
-        <!-- Logo & Heading :: Start -->
-        <tr>
-            <td>
-                <img src="https://cmofirst.com/wp-content/uploads/2022/08/Final-CMO-CIO-Logos_CMO-Logo.png" style="padding-top: 5px; padding-bottom: 5px; padding-left: 20px; 
-                display: block; margin-left: auto; margin-right: auto;" alt="" width="80">
-            </td>
-        </tr>
-        <tr>
-            <td width="100%" class="brandlogo" style="color:#555555;font-size:20px;">
-                <div class="heading"
-                    style="font-size: 22px; font-weight: bold; padding-bottom: 2%; background-color: #245b8e; color: white; padding-left: 0px; height: auto; text-align: center; padding-top: 2%;">
-                    Employees are choosing how they work</div>
-            </td>
-        </tr>
-        <!-- Logo & Heading :: End -->
-        <tr>
-            <td>
-                <table class="content-table" cellpadding="10" width="100%" style="  padding: 1.5%; ">
-                    <!-- Image & Content :: Start -->
-                    <tr>
-                        <td valign="top" align="left" style="color:#505050; font-size: 14px; text-align: left; "
-                            width="477">
-                            <p>To remain connected, productive and secure in a world where many forms of work can now be
-                                done remotely, employees need confidence that the digital environment won’t hinder their
-                                ability to deliver their best work.<br><br>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://resources.itcontentbox.com/whitepaper/DA_logo.png" alt="DA logo">
+      <div style="line-height:1">
+        <div style="font-weight:600;color:var(--muted-ink)">District Administration</div>
+        <div style="font-size:0.8rem;color:#6e7b7d">Insights & Resources</div>
+      </div>
+    </div>
 
-                                Global research from Statista shows that 80% of employees working at least partially
-                                remotely would recommend it to a friend. But, as the study notes, “attitudes on telework
-                                are positive if employees are given the appropriate tools and technology to work
-                                remotely. These include digital collaboration and productivity management tools, as well
-                                as necessary hardware.”<br><br>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#case">Case Study</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </header>
 
-                                This whitepaper looks at the key challenges and opportunities emerging from the changing
-                                workplace, defining best IT leadership practices that will ensure employees can work,
-                                collaborate, and innovate securely and productively from anywhere and, most importantly,
-                                accelerate the business towards its goals.<br><br>
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td align="center" valign="top" style="padding-top: 30px;" class="img" width="273">
-                            <a href="#">
-                                <img src="https://resource.itbusinesstoday.com/whitepapers/37621-Dell-Technologies-EMEA-Future-1.png"
-                                    width="300" alt="" style="border-radius:5px; border: 1px solid #CCCCCC;"
-                                    class="thumbnail"></a>
-                        </td>
-                    </tr>
-                    <!-- Image & Content :: End -->
-                    <!-- CTA :: Start -->
-                    <tr>
-                        <td colspan="2" align="center" class="CTA" style="padding-bottom: 20px; padding-top: 10px;">
-                            <br>
-                            <a href="lp.html" class="calltoaction"
-                                style="font-size:18px; color:#fff; border:0; border-radius:05px; padding:1% 2.7% 1.5% 2.7%; cursor:pointer; outline:0; text-decoration:none;"><img
-                                    src="https://thebusinessinnovations.com/tbi/resources/001-down-arrow.png" alt="icon"
-                                    width="15px">
-                                Download Now
-                            </a>
-                        </td>
-                    </tr>
-                    <!-- CTA :: End -->
+  <main>
+    <!-- 🔥 Video Hero Section -->
+    <section class="video-hero">
+      <video autoplay muted loop playsinline class="bg-video">
+        <source
+          src="https://b2b-insight.biz-tech-insights.com/FY25Q4-Zendesk-Contact-Center-AP/Logos/78c030da863e353eee15b6fd5e11f9e4.mov"
+          type="video/mp4" />
+      </video>
 
-                    <table class="row row-4" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-						<tbody>
-							<tr>
-								<td>
-									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000; width: 650px; margin: 0 auto;" width="650">
-										<tbody>
-											<tr>
-												<td class="column column-1" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
-													<table class="paragraph_block block-1" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
-														<tr>
-															<td class="pad" style="padding-bottom:15px;padding-left:10px;padding-right:10px;padding-top:20px;">
-																<div style="color:#393d47;font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:18px;line-height:120%;text-align:center;mso-line-height-alt:21.599999999999998px;">
-																	<p style="margin: 0; word-break: break-word;"><span><strong>Meet Our</strong></span></p>
-																</div>
-															</td>
-														</tr>
-													</table>
-													<table class="divider_block block-2" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-														<tr>
-															<td class="pad" style="padding-bottom:10px;padding-left:10px;padding-right:10px;">
-																<div class="alignment" align="center">
-																	<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="10%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-																		<tr>
-																			<td class="divider_inner" style="font-size: 1px; line-height: 1px; border-top: 3px solid #F9C253;"><span>&#8202;</span></td>
-																		</tr>
-																	</table>
-																</div>
-															</td>
-														</tr>
-													</table>
-													<table class="paragraph_block block-3" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
-														<tr>
-															<td class="pad" style="padding-bottom:10px;padding-left:10px;padding-right:10px;">
-																<div style="color:#2d9eff;font-family:'Cabin',Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:38px;line-height:120%;text-align:center;mso-line-height-alt:45.6px;">
-																	<p style="margin: 0; word-break: break-word;"><span><strong>SPEAKERS</strong></span></p>
-																</div>
-															</td>
-														</tr>
-													</table>
-													<table class="paragraph_block block-4" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
-														<tr>
-															<td class="pad" style="padding-bottom:10px;padding-left:10px;padding-right:10px;">
-																<div style="color:#393d47;font-family:Cabin, Arial, Helvetica Neue, Helvetica, sans-serif;font-size:14px;line-height:150%;text-align:center;mso-line-height-alt:21px;">
-																	<p style="margin: 0; word-break: break-word;">Lorem ipsum quis massa id velit sagittis fermentum massa. Pellen tesque vel massa a felis. ipsum quis velit sagittis ferm velit sagittis ferm massa id velit sagittis fermentum massa massa id velit.&nbsp;</p>
-																</div>
-															</td>
-														</tr>
-													</table>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-					<table class="row row-5" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-						<tbody>
-							<tr>
-								<td>
-									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000; width: 650px; margin: 0 auto;" width="650">
-										<tbody>
-											<tr>
-												<td class="column column-1" width="33.333333333333336%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
-													<table class="image_block block-1" width="100%" border="0" cellpadding="10" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-														<tr>
-															<td class="pad">
-																<div class="alignment" align="center" style="line-height:10px"><img src="https://www.itbusinessplus.net//template/V2/Narendra/Assets/sp1.png" style="display: block; height: auto; border: 0; max-width: 156.666667px; width: 100%;" width="196.66666666666666" alt="Speaker Face" title="Speaker Face"></div>
-															</td>
-														</tr>
-													</table>
-													<table class="paragraph_block block-2" width="100%" border="0" cellpadding="10" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
-														<tr>
-															<td class="pad">
-																<div style="color:#2d9eff;font-family:'Cabin',Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:15px;line-height:120%;text-align:center;mso-line-height-alt:18px;">
-																	<p style="margin: 0; word-break: break-word;"><span><strong>NARENDRA PATIL</strong></span></p>
-																</div>
-															</td>
-														</tr>
-													</table>
-													<table class="paragraph_block block-3" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
-														<tr>
-															<td class="pad" style="padding-bottom:10px;padding-left:10px;padding-right:10px;">
-																<div style="color:#393d47;font-family:Cabin, Arial, Helvetica Neue, Helvetica, sans-serif;font-size:12px;line-height:150%;text-align:center;mso-line-height-alt:18px;">
-																	<p style="margin: 0; word-break: break-word;"><span><strong>UI DESIGNER - COMPANY</strong></span></p>
-																</div>
-															</td>
-														</tr>
-													</table>
-													
-												</td>
-												<td class="column column-2" width="33.333333333333336%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
-													<table class="image_block block-1" width="100%" border="0" cellpadding="10" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-														<tr>
-															<td class="pad">
-																<div class="alignment" align="center" style="line-height:10px"><img src="https://www.itbusinessplus.net//template/V2/Narendra/Assets/sp2.png" style="display: block; height: auto; border: 0; max-width: 156.666667px; width: 100%;" width="196.66666666666666" alt="Speaker Face" title="Speaker Face"></div>
-															</td>
-														</tr>
-													</table>
-													<table class="paragraph_block block-2" width="100%" border="0" cellpadding="10" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
-														<tr>
-															<td class="pad">
-																<div style="color:#2d9eff;font-family:'Cabin',Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:15px;line-height:120%;text-align:center;mso-line-height-alt:18px;">
-																	<p style="margin: 0; word-break: break-word;"><span><strong>PRATIK CHINCHORE</strong></span></p>
-																</div>
-															</td>
-														</tr>
-													</table>
-													<table class="paragraph_block block-3" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
-														<tr>
-															<td class="pad" style="padding-bottom:10px;padding-left:10px;padding-right:10px;">
-																<div style="color:#393d47;font-family:Cabin, Arial, Helvetica Neue, Helvetica, sans-serif;font-size:12px;line-height:150%;text-align:center;mso-line-height-alt:18px;">
-																	<p style="margin: 0; word-break: break-word;"><span><strong>DEVELOPER - COMPANY</strong></span></p>
-																</div>
-															</td>
-														</tr>
-													</table>
-													
-												</td>
-												<td class="column column-3" width="33.333333333333336%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
-													<table class="image_block block-1" width="100%" border="0" cellpadding="10" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-														<tr>
-															<td class="pad">
-																<div class="alignment" align="center" style="line-height:10px"><img src="https://www.itbusinessplus.net//template/V2/Narendra/Assets/sp3.png" style="display: block; height: auto; border: 0; max-width: 156.666667px; width: 100%;" width="196.66666666666666" alt="Speaker Face" title="Speaker Face"></div>
-															</td>
-														</tr>
-													</table>
-													<table class="paragraph_block block-2" width="100%" border="0" cellpadding="10" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
-														<tr>
-															<td class="pad">
-																<div style="color:#2d9eff;font-family:'Cabin',Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:15px;line-height:120%;text-align:center;mso-line-height-alt:18px;">
-																	<p style="margin: 0; word-break: break-word;"><span><strong>RAJ INGALE</strong></span></p>
-																</div>
-															</td>
-														</tr>
-													</table>
-													<table class="paragraph_block block-3" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
-														<tr>
-															<td class="pad" style="padding-bottom:10px;padding-left:10px;padding-right:10px;">
-																<div style="color:#393d47;font-family:Cabin, Arial, Helvetica Neue, Helvetica, sans-serif;font-size:12px;line-height:150%;text-align:center;mso-line-height-alt:18px;">
-																	<p style="margin: 0; word-break: break-word;"><span><strong>MARKETER - COMPANY</strong></span></p>
-																</div>
-															</td>
-														</tr>
-													</table>													
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-                    <table class="row row-6" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-						<tbody>
-							<tr>
-								<td>
-									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000; width: 650px; margin: 0 auto;" width="650">
-										<tbody>
-											<tr>
-												<td class="column column-1" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
-													<table class="paragraph_block block-1" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
-														<tr>
-															<td class="pad" style="padding-bottom:15px;padding-left:10px;padding-right:10px;padding-top:20px;">
-																<div style="color:#393d47;font-family:Cabin, Arial, Helvetica Neue, Helvetica, sans-serif;font-size:15px;line-height:120%;text-align:center;mso-line-height-alt:18px;">
-																	<p style="margin: 0; word-break: break-word;"><span><strong>WHAT WE'LL COVER</strong></span></p>
-																</div>
-															</td>
-														</tr>
-													</table>
-													<table class="divider_block block-2" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-														<tr>
-															<td class="pad" style="padding-bottom:10px;padding-left:10px;padding-right:10px;">
-																<div class="alignment" align="center">
-																	<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="10%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-																		<tr>
-																			<td class="divider_inner" style="font-size: 1px; line-height: 1px; border-top: 3px solid #F9C253;"><span>&#8202;</span></td>
-																		</tr>
-																	</table>
-																</div>
-															</td>
-														</tr>
-													</table>
-													<table class="paragraph_block block-3" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
-														<tr>
-															<td class="pad" style="padding-bottom:20px;padding-left:10px;padding-right:10px;">
-																<div style="color:#2d9eff;font-family:'Cabin',Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:38px;line-height:120%;text-align:center;mso-line-height-alt:45.6px;">
-																	<p style="margin: 0; word-break: break-word;"><span><strong>KEY POINTS</strong></span></p>
-																</div>
-															</td>
-														</tr>
-													</table>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-					 
-					<table class="row row-8" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-						<tbody>
-							<tr>
-								<td>
-									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000; width: 650px; margin: 0 auto;" width="650">
-										<tbody>
-											<tr>
-												<td class="column column-1" width="33.333333333333336%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; background-color: #e8f1f9; padding-bottom: 5px; padding-top: 20px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
-													<table class="image_block block-1" width="100%" border="0" cellpadding="10" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-														<tr>
-															<td class="pad">
-																<!-- <div class="alignment" align="center" style="line-height:10px"><img src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/5311/app-development.png" style="display: block; height: auto; border: 0; max-width: 64px; width: 100%;" width="64" alt="Topic Icon" title="Topic Icon"></div> -->
-															</td>
-														</tr>
-													</table>
-													<table class="paragraph_block block-2" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
-														<tr>
-															<td class="pad" style="padding-bottom:10px;padding-left:10px;padding-right:10px;padding-top:5px;">
-																<div style="color:#2d9eff;font-family:Cabin, Arial, Helvetica Neue, Helvetica, sans-serif;font-size:15px;line-height:120%;text-align:center;mso-line-height-alt:18px;">
-																	<p style="margin: 0; word-break: break-word;"><strong><span>Consulting</span></strong></p>
-																</div>
-															</td>
-														</tr>
-													</table>
-													<table class="paragraph_block block-3" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
-														<tr>
-															<td class="pad" style="padding-bottom:20px;padding-left:15px;padding-right:15px;">
-																<div style="color:#393d47;font-family:Cabin, Arial, Helvetica Neue, Helvetica, sans-serif;font-size:14px;line-height:150%;text-align:center;mso-line-height-alt:21px;">
-																	<p style="margin: 0; word-break: break-word;">With hands-on mentoring, Red Hat consultants build skills and drive independence,
-																		while also streamlining processes, aligning teams, and ensuring systems and applications work
-																		together in accord.</p>
-																</div>
-															</td>
-														</tr>
-													</table>
-												</td>
-												<td class="column column-2" width="33.333333333333336%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; background-color: #f0f8ff; padding-bottom: 5px; padding-top: 20px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
-													<table class="image_block block-1" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-														<tr>
-															<td class="pad" style="padding-bottom:10px;padding-left:25px;padding-right:10px;padding-top:10px;width:100%;">
-																<!-- <div class="alignment" align="center" style="line-height:10px"><img src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/5311/smartphone.png" style="display: block; height: auto; border: 0; max-width: 64px; width: 100%;" width="64" alt="Topic Icon" title="Topic Icon"></div> -->
-															</td>
-														</tr>
-													</table>
-													<table class="paragraph_block block-2" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
-														<tr>
-															<td class="pad" style="padding-bottom:10px;padding-left:10px;padding-right:10px;padding-top:5px;">
-																<div style="color:#2d9eff;font-family:Cabin, Arial, Helvetica Neue, Helvetica, sans-serif;font-size:15px;line-height:120%;text-align:center;mso-line-height-alt:18px;">
-																	<p style="margin: 0; word-break: break-word;"><strong><span>&nbsp;Training</span></strong></p>
-																</div>
-															</td>
-														</tr>
-													</table>
-													<table class="paragraph_block block-3" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
-														<tr>
-															<td class="pad" style="padding-bottom:20px;padding-left:15px;padding-right:15px;">
-																<div style="color:#393d47;font-family:Cabin, Arial, Helvetica Neue, Helvetica, sans-serif;font-size:14px;line-height:150%;text-align:center;mso-line-height-alt:21px;">
-																	<p style="margin: 0; word-break: break-word;">Helps to close skills gaps and hone your team’s Red Hat product expertise by developing
-																		role-based, hands-on knowledge in emerging and foundational open source technologies.
-																		</p>
-																</div>
-															</td>
-														</tr>
-													</table>
-												</td>
-												<td class="column column-3" width="33.333333333333336%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; background-color: #e8f1f9; padding-bottom: 5px; padding-top: 20px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
-													<table class="image_block block-1" width="100%" border="0" cellpadding="10" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-														<tr>
-															<td class="pad">
-																<!-- <div class="alignment" align="center" style="line-height:10px"><img src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/5311/mobile-payment.png" style="display: block; height: auto; border: 0; max-width: 64px; width: 100%;" width="64" alt="Topic Icon" title="Topic Icon"></div> -->
-															</td>
-														</tr>
-													</table>
-													<table class="paragraph_block block-2" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
-														<tr>
-															<td class="pad" style="padding-bottom:10px;padding-left:10px;padding-right:10px;padding-top:5px;">
-																<div style="color:#2d9eff;font-family:Cabin, Arial, Helvetica Neue, Helvetica, sans-serif;font-size:15px;line-height:120%;text-align:center;mso-line-height-alt:18px;">
-																	<p style="margin: 0; word-break: break-word;"><strong><span>Red Hat Technical Account Management</span></strong></p>
-																</div>
-															</td>
-														</tr>
-													</table>
-													<table class="paragraph_block block-3" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
-														<tr>
-															<td class="pad" style="padding-bottom:20px;padding-left:15px;padding-right:15px;">
-																<div style="color:#393d47;font-family:Cabin, Arial, Helvetica Neue, Helvetica, sans-serif;font-size:14px;line-height:150%;text-align:center;mso-line-height-alt:21px;">
-																	<p style="margin: 0; word-break: break-word;">Technical Account Managers (TAMs) partner with you
-																		to resolve potential problems before they occur, minimizing disruption and freeing you to focus on
-																		your key business challenges.</p>
-																</div>
-															</td>
-														</tr>
-													</table>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</td>
-							</tr>
-						</tbody>
-					</table>
+      <div class="video-overlay"></div>
 
-                    <table class="row row-9" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-						<tbody>
-							<tr>
-								<td>
-									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000; width: 650px; margin: 0 auto;" width="650">
-										<tbody>
-											<tr>
-												<td class="column column-1" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
-													<div class="spacer_block block-1" style="height:40px;line-height:40px;font-size:1px;">&#8202;</div>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-					
-					<table class="row row-11" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; ">
-						<tbody>
-							<tr>
-								<td>
-									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000; width: 650px; margin: 0 auto;background-color: #1f2538;" width="650">
-										<tbody>
-											<tr>
-												<td colspan="2" class="column column-1" width="33.333333333333336%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
-													
-													<table class="paragraph_block block-1" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
-														<tr>
-															<td class="pad" style="padding-left:20px;padding-right:10px;">
-																<div style="color:#f7f8fb;font-family:Cabin, Arial, Helvetica Neue, Helvetica, sans-serif;font-size:16px;line-height:150%;text-align:left;mso-line-height-alt:24px;">
-																	<p style="margin: 0; word-break: break-word;font-size: 26px; padding: 15px 15px 15px 0px;text-align: center;"><span style="color:#2d9eff;"><strong><span>NEXT <span style="color: white;">WEBINAR</span></span></strong></span></p>
-																</div>
-															</td>
-														</tr>
-													</table>
-												</td>												
-											</tr>
-											<tr>
-												<td class="column column-1" width="33.333333333333336%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
-													
-													<table class="paragraph_block block-1" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
-														<tr>
-															<td class="pad" style="padding-left:20px;padding-right:10px;">
-																<div style="color:#f7f8fb;font-family:Cabin, Arial, Helvetica Neue, Helvetica, sans-serif;font-size:16px;line-height:150%;text-align:left;mso-line-height-alt:24px;">
-																	<p style="margin: 0; word-break: break-word;"><span style="color:#2d9eff;"><strong><span>When</span></strong></span></p>
-																</div>
-															</td>
-														</tr>
-													</table>
-													<table class="paragraph_block block-2" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
-														<tr>
-															<td class="pad" style="padding-left:20px;padding-right:10px;">
-																<div style="color:#f7f8fb;font-family:Cabin, Arial, Helvetica Neue, Helvetica, sans-serif;font-size:14px;line-height:150%;text-align:left;mso-line-height-alt:21px;">
-																	<p style="margin: 0; word-break: break-word;">Nov 11, 2023&nbsp; <em>11.p.m.&nbsp;</em></p>
-																</div>
-															</td>
-														</tr>
-													</table>
-													<table class="paragraph_block block-3" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
-														<tr>
-															<td class="pad" style="padding-left:20px;padding-right:10px;padding-top:15px;">
-																<div style="color:#f7f8fb;font-family:Cabin, Arial, Helvetica Neue, Helvetica, sans-serif;font-size:16px;line-height:150%;text-align:left;mso-line-height-alt:24px;">
-																	<p style="margin: 0; word-break: break-word;"><span style="color:#2d9eff;"><strong><span>Meeting number</span></strong></span></p>
-																</div>
-															</td>
-														</tr>
-													</table>
-													<table class="paragraph_block block-4" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
-														<tr>
-															<td class="pad" style="padding-left:20px;padding-right:10px;">
-																<div style="color:#f7f8fb;font-family:Cabin, Arial, Helvetica Neue, Helvetica, sans-serif;font-size:14px;line-height:150%;text-align:left;mso-line-height-alt:21px;">
-																	<p style="margin: 0; word-break: break-word;">262758237913</p>
-																</div>
-															</td>
-														</tr>
-													</table>
-												</td>
-												<td class="column column-2" width="66.66666666666667%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
-													<table class="paragraph_block block-1" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
-														<tr>
-															<td class="pad" style="padding-left:20px;padding-right:10px;">
-																<div style="color:#f7f8fb;font-family:Cabin, Arial, Helvetica Neue, Helvetica, sans-serif;font-size:16px;line-height:150%;text-align:left;mso-line-height-alt:24px;">
-																	<p style="margin: 0; word-break: break-word;"><span style="color:#2d9eff;"><strong><span>Duration</span></strong></span></p>
-																</div>
-															</td>
-														</tr>
-													</table>
-													<table class="paragraph_block block-2" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
-														<tr>
-															<td class="pad" style="padding-bottom:20px;padding-left:20px;padding-right:10px;">
-																<div style="color:#f7f8fb;font-family:Cabin, Arial, Helvetica Neue, Helvetica, sans-serif;font-size:14px;line-height:150%;text-align:left;mso-line-height-alt:21px;">
-																	<p style="margin: 0; word-break: break-word;"><span>Your lesson will last aproximately 1 hour and must be scheduled in advance</span></p>
-																	<p style="margin: 0; word-break: break-word;">&nbsp;</p>
-																	<p style="margin: 0; word-break: break-word;"><span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.&nbsp;</span></p>
-																</div>
-															</td>
-														</tr>
-													</table>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</td>
-							</tr>
-						</tbody>
-					</table>
+      <!-- 🌟 Spotlight layer -->
+      <div class="spotlight"></div>
 
-    <tr>
-        <td style="background-color: #fff; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;">
-            <table class="content-table" align="center" width="100%">
-                <!-- Start :: Copyright, Address, Unsubscribe -->
-                <tr>
-                    <td colspan="2"
-                        style="font-size:12px;padding-bottom:10px;padding-top:20px; text-align: center; line-height: 200%; background-color:#245b8ea3;">
-                        <img src="https://resource.cmofirst.com/whitepaper/sample_logo.png" alt="" width="260">
-                        <p><span style="color:black;">Address:</span> Hawthorne, CA 90250 USA
-                            3501, Jack Northorp Ave, Ste C3873</p>
-                        <p> <a href="https://itbusinesstoday.com/eu-data-protection/"
-                                style="text-decoration:underline; color:black;" target="_blank">Privacy Policy</a>
-                            &nbsp; &nbsp; | &nbsp; </span><a
-                                href="https://resource.itbusinesstoday.com/whitepapers/unsubscribed.html"
-                                style="text-decoration:underline; color:black;" target="_blank">Unsubscribe</a>
-                        </p>
-                    </td>
-                </tr>
-                <!-- End :: Copyright, Address, Unsubscribe -->
-            </table>
-        </td>
-    </tr>
-    </td>
-    </tr>
-</table>
+      <div class="video-content">
+        <h1 class="video-title">
+          <span class="shimmer">Building Experiences That Inspire</span>
+        </h1>
+        <br>
+        <br>
 
-    </table>
+
+        <button class="lux-btn">Explore More</button>
+      </div>
+    </section>
+
+
+
+    <!-- HERO -->
+    <section class="hero" id="hero" aria-label="Hero">
+      <!-- particle layer -->
+      <div class="particle-layer" aria-hidden="true"></div>
+
+      <div class="hero-left">
+        <img class="cover"
+          src="https://resources.itcontentbox.com/whitepaper/Phantom-ETC-DA-Right-At-School-75653-1.png"
+          alt="ebook cover">
+        <h1 id="heroHeadline">The Heart Behind Great Out-Of-School Time</h1>
+        <p class="lead">Discover how heart, care and connection make after-school programs places where students thrive,
+          parents find peace of mind, and school communities flourish. This eBook gathers the voices of families and
+          educators whose stories show the real impact of thoughtful out-of-school time.</p>
+
+        <div class="highlights">
+          <div class="pill">
+            <strong>Real Stories</strong>
+            <small>Profiles from program participants</small>
+          </div>
+          <div class="pill">
+            <strong>Actionable Tips</strong>
+            <small>Ideas you can apply tomorrow</small>
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero-right">
+        <div class="form-card" id="leadForm" aria-labelledby="formTitle">
+          <h3 id="formTitle">FILL OUT THE FORM BELOW TO ACCESS</h3>
+          <p class="mini">Get the free eBook and resources pack emailed to you.</p>
+
+          <form onsubmit="event.preventDefault(); submitForm();">
+            <div class="form-grid">
+              <input type="text" id="fname" placeholder="First name *" required>
+              <input type="text" id="lname" placeholder="Last name *" required>
+            </div>
+            <div class="form-grid">
+              <input type="email" id="email" placeholder="Email *" required>
+              <input type="text" id="job" placeholder="Job title">
+            </div>
+            <div class="form-grid">
+              <input type="text" id="company" placeholder="Company name">
+              <input type="text" id="Address" placeholder="Address">
+            </div>
+
+            <div style="display:flex; gap:10px; margin-top:6px">
+              <input type="text" id="phone" placeholder="Phone number">
+              <select id="country" style="min-width:140px">
+                <option>United States</option>
+                <option>Canada</option>
+                <option>United Kingdom</option>
+              </select>
+            </div>
+
+            <button class="btn" type="submit" id="ctaBtn">ACCESS NOW</button>
+            <div class="disclaimer">By submitting you agree to receive resources from Right at School and District
+              Administration. You may unsubscribe anytime.</div>
+          </form>
+        </div>
+      </aside>
+
+      <!-- Waves -->
+      <div class="wave-wrap" aria-hidden="true">
+        <div class="waves" id="waves">
+          <svg viewBox="0 0 1440 260" preserveAspectRatio="none" aria-hidden="true">
+            <path id="waveBack" d="M0,160 C220,240 420,80 720,120 C1020,160 1220,260 1440,200 L1440,260 L0,260 Z"
+              fill="#efe6da" opacity="0.95"></path>
+            <path id="waveMid" d="M0,180 C200,220 420,120 720,160 C1020,200 1220,140 1440,160 L1440,260 L0,260 Z"
+              fill="#f6efe3" opacity="0.98"></path>
+            <path id="waveFront" d="M0,200 C240,260 420,160 720,180 C1000,200 1200,190 1440,180 L1440,260 L0,260 Z"
+              fill="#fffaf6" opacity="1"></path>
+          </svg>
+        </div>
+      </div>
+
+      <!-- subtle scroll indicator -->
+      <div class="scroll-indicator" aria-hidden="true">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+        <span style="font-size:12px;color:#6e7b7d">Scroll</span>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="content-block">
+      <h2>What you'll learn</h2>
+      <p>Practical examples, teacher & parent perspectives, and program strategies that create meaningful out-of-school
+        experiences for students.</p>
+
+      <div class="features" style="margin-top:18px">
+        <div class="feature">
+          <h4>Student-centered design</h4>
+          <p>Design activities and schedules that center student engagement, autonomy and joy — not just supervision.
+          </p>
+        </div>
+        <div class="feature">
+          <h4>Family engagement</h4>
+          <p>Practical communication approaches that help families feel connected and informed about program outcomes.
+          </p>
+        </div>
+        <div class="feature">
+          <h4>Measurable impact</h4>
+          <p>Simple ways to track program impact so teams can iterate and demonstrate success to stakeholders.</p>
+        </div>
+      </div>
+
+      <div class="cta-wide">
+        <div>
+          <h3 style="margin:0">Download the free eBook</h3>
+          <p style="margin:6px 0 0">Get stories, checklists, and program ideas in one practical resource.</p>
+        </div>
+        <div>
+          <button class="btn" onclick="document.getElementById('fname').focus()">GET THE EBOOK</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CASE STUDY -->
+    <section id="case" class="content-block">
+      <h2>Case Study: Making Time Matter</h2>
+      <p>A look at one district that redesigned its after-school program to boost attendance, engagement, and parent
+        satisfaction.</p>
+
+      <div class="case-grid" style="margin-top:16px">
+        <div class="case-left">
+          <p style="color:#55676a">Over two years, the district implemented structured social-emotional learning in
+            every after-school classroom. Teachers reported improved behavior and increased family trust. Below are the
+            results and tools used.</p>
+
+          <ul style="margin-top:12px; color:#55676a; line-height:1.7">
+            <li>20% increase in consistent attendance</li>
+            <li>85% of staff reported positive behavior change</li>
+            <li>Custom reflection tools for students and families</li>
+          </ul>
+        </div>
+        <div class="case-right">
+          <img src="https://resources.itcontentbox.com/whitepaper/RAS-LOGO-sn.png" alt="Right at School"
+            style="height:110px; display:block; margin-left:auto;">
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="content-block">
+      <h2>Voices from the field</h2>
+      <p>Short quotes from educators and families who experienced the difference these programs make.</p>
+
+      <div class="testimonial-list" style="margin-top:14px">
+        <div class="testimonial">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop" alt="">
+          <div>
+            <div class="txt">"My child looks forward to every day. The program makes learning fun and steady."</div>
+            <div class="meta">— Parent, Minneapolis</div>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <img src="https://images.unsplash.com/photo-1545996124-1b6e4f3a9a9e?q=80&w=200&auto=format&fit=crop" alt="">
+          <div>
+            <div class="txt">"Staff training focused on connection — and the results have been remarkable."</div>
+            <div class="meta">— Program Director, Ohio</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="content-block">
+      <h2>Frequently asked questions</h2>
+      <div class="faq" style="margin-top:14px">
+        <div class="faq-item">
+          <h4>Who is this eBook for?</h4>
+          <p>Program directors, principals, after-school staff, and district leaders looking to enhance out-of-school
+            time.</p>
+        </div>
+        <div class="faq-item">
+          <h4>How long is the eBook?</h4>
+          <p>The eBook is a concise 28-page guide with stories, checklists, and templates to use immediately.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Can I share this with my team?</h4>
+          <p>Yes—once you download, the PDF is yours to share with colleagues and partners.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div
+      style="max-width:1100px;margin:0 auto; display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap;">
+      <div>
+        <strong>District Administration</strong><br>
+        <span style="color:#6e7b7d">222 Lakeview Ave, West Palm Beach, FL 33401</span>
+      </div>
+      <div style="color:#6e7b7d">© 2025 District Administration. Sponsored by Right at School.</div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="./script.js"></script>
 </body>
-
-</html>
 
 </html>
